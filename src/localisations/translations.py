@@ -1,3 +1,5 @@
+import os
+from mylocale import tr
 from flet_localisation import locale
 import flet as ft
 
@@ -11,6 +13,6 @@ def HELLOMSG(page):
     region = str(locale(platform=myplatfom)).split("_")[1]
     return tr(
         csv_file=trfile,
-        target_key="HELLOMSG",
+        target_key="HELLOWORLD",
         langcode=langcode,
     )
