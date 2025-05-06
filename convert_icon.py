@@ -6,8 +6,13 @@ def correct_svg(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         content = file.read()
 
-    # Korrigiere das Dezimaltrennzeichen
-    content = re.sub(r'stroke-opacity="1,000000"', 'stroke-opacity="1.0"', content)
+    # Korrigiere die Dezimaltrennzeichen für stroke-opacity und fill-opacity
+    content = re.sub(
+        r'stroke-opacity="([\d,]+)"', lambda m: m.group(0).replace(",", "."), content
+    )
+    content = re.sub(
+        r'fill-opacity="([\d,]+)"', lambda m: m.group(0).replace(",", "."), content
+    )
 
     corrected_file_path = "corrected_icon.svg"
     with open(corrected_file_path, "w", encoding="utf-8") as file:
