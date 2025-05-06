@@ -11,7 +11,65 @@ def home(adaptive: bool, page: ft.Control):
         auto_scroll=True,
         controls=[
             ft.SafeArea(
-                mystack(img_src="https://picsum.photos/300/300", text=HELLOMSG(page))
+                ft.Column(
+                    controls=[
+                        ft.Text("Hello", size=40),
+                        ft.Row(
+                            controls=[
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                                mystack(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                ),
+                            ],
+                            expand=True,
+                            scroll=ft.ScrollMode.AUTO,
+                        ),
+                    ]
+                )
             )
         ],
     )
