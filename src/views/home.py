@@ -1,6 +1,6 @@
 import flet as ft
 from localisations import *
-from components import mystack
+from components import mystack, mybutton
 
 
 def home(adaptive: bool, page: ft.Control):
@@ -20,108 +20,65 @@ def home(adaptive: bool, page: ft.Control):
                         ft.Text("Hello", size=40),
                         ft.Row(
                             controls=[
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
-                                ),
-                            ],
-                            expand=True,
-                            scroll=ft.ScrollMode.AUTO,
-                        ),
-                        ft.Text("Hello", size=40),
-                        ft.Row(
-                            controls=[
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
-                                ),
-                                mystack(
-                                    img_src="https://picsum.photos/300/300",
-                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
                             ],
                             expand=True,
@@ -130,53 +87,132 @@ def home(adaptive: bool, page: ft.Control):
                         ft.Text("Hello", size=40),
                         ft.Row(
                             controls=[
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
-                                mystack(
+                                mybutton(
                                     img_src="https://picsum.photos/300/300",
                                     text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                            ],
+                            expand=True,
+                            scroll=ft.ScrollMode.AUTO,
+                        ),
+                        ft.Text("Hello", size=40),
+                        ft.Row(
+                            controls=[
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
+                                ),
+                                mybutton(
+                                    img_src="https://picsum.photos/300/300",
+                                    text=HELLOMSG(page),
+                                    on_click=lambda _: print("Hello"),
                                 ),
                             ],
                             expand=True,
