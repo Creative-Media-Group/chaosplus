@@ -1,5 +1,6 @@
 import flet as ft
 from localisations import *
+from components import mystack
 
 
 def home(adaptive: bool, page: ft.Control):
@@ -8,5 +9,9 @@ def home(adaptive: bool, page: ft.Control):
         adaptive=adaptive,
         appbar=ft.AppBar(title=ft.Text("Chaos+"), center_title=True),
         auto_scroll=True,
-        controls=[ft.SafeArea(ft.Text(HELLOMSG(page)))],
+        controls=[
+            ft.SafeArea(
+                mystack(img_src="https://picsum.photos/300/300", text=HELLOMSG(page))
+            )
+        ],
     )
