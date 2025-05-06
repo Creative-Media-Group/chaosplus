@@ -1,7 +1,7 @@
 import flet as ft
 
 
-def mystack(img_src: str, text: str):
+def mystack(img_src: str, text: str, adaptive: bool = True):
     width = 160 * 2
     height = 90 * 2
     return ft.Stack(
@@ -17,7 +17,7 @@ def mystack(img_src: str, text: str):
                 src=img_src.format(),
             ),
             ft.Row(
-                [
+                controls=[
                     ft.Text(
                         value=text,
                         color=ft.Colors.ON_SURFACE,
@@ -27,15 +27,19 @@ def mystack(img_src: str, text: str):
                     )
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
+                adaptive=adaptive,
             ),
         ],
+        adaptive=adaptive,
         alignment=ft.alignment.bottom_center,
         width=width,
         height=height,
     )
 
 
-def mybutton(img_src: str, text: str, on_click, disabled: bool = False):
+def mybutton(
+    img_src: str, text: str, on_click, disabled: bool = False, adaptive: bool = True
+):
     width = 160 * 2
     height = 90 * 2
     border_radius = 10
@@ -53,7 +57,7 @@ def mybutton(img_src: str, text: str, on_click, disabled: bool = False):
                     src=img_src.format(),
                 ),
                 ft.Row(
-                    [
+                    controls=[
                         ft.Text(
                             value=text,
                             color=ft.Colors.ON_SURFACE,
@@ -62,13 +66,16 @@ def mybutton(img_src: str, text: str, on_click, disabled: bool = False):
                             opacity=0.8,
                         )
                     ],
+                    adaptive=adaptive,
                     alignment=ft.MainAxisAlignment.CENTER,
                 ),
             ],
             alignment=ft.alignment.bottom_center,
             width=width,
             height=height,
+            adaptive=adaptive,
         ),
+        adaptive=adaptive,
         on_click=on_click,
         width=width + 5,
         height=height + 15,
