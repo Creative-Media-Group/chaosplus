@@ -25,6 +25,12 @@ copyright = "Copyright (C) 2025 by Creative Media Group"
 [tool.flet.app]
 path = "src"
 
+[tool.flet.android]
+dependencies = ["pyjnius"]
+
+[tool.flet.ios]
+dependencies = ["pyobjus"]
+
 [tool.uv]
 dev-dependencies = ["flet[all]==0.27.6"]
 
