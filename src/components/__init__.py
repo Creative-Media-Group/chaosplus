@@ -13,6 +13,9 @@ def mystack(img_src: str, text: str):
                 fit=ft.ImageFit.FIT_WIDTH,
                 border_radius=10,
             ),
+            ft.Image(
+                src=img_src.format(),
+            ),
             ft.Row(
                 [
                     ft.Text(

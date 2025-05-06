@@ -10,6 +10,7 @@ def home(adaptive: bool, page: ft.Control):
         appbar=ft.AppBar(
             title=ft.Text("Chaos+"),
             center_title=True,
+            leading=ft.Image(src="icon.png", width=40, height=40),
         ),
         auto_scroll=True,
         controls=[
