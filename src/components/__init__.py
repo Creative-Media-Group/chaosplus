@@ -70,7 +70,7 @@ def mybutton(
                     alignment=ft.MainAxisAlignment.CENTER,
                 ),
             ],
-            alignment="bottom_center",
+            alignment=ft.Alignment(x=0, y=1),
             width=width,
             height=height,
             adaptive=adaptive,
