@@ -3,6 +3,10 @@ import flet_video as ftv
 
 
 def videoplayer(adaptive: bool, page: ft.Control):
+    def loaded(e):
+        video.play()
+        page.window.full_screen = True
+
     url = "https://cdn.media.ccc.de/congress/2024/webm-hd/38c3-198-eng-deu-pol-BlinkenCity_Radio-Controlling_Street_Lamps_and_Power_Plants_webm-hd.webm"
     video_obj = [ftv.VideoMedia(url)]
     return ft.View(
@@ -20,7 +24,7 @@ def videoplayer(adaptive: bool, page: ft.Control):
                 autoplay=True,
                 filter_quality=ft.FilterQuality.HIGH,
                 muted=False,
-                on_loaded=lambda e: video.fu,
+                on_loaded=lambda e: loaded(e),
                 on_enter_fullscreen=lambda e: print("Video entered fullscreen!"),
                 on_exit_fullscreen=lambda e: print("Video exited fullscreen!"),
             )
