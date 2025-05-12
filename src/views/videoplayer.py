@@ -30,7 +30,7 @@ def videoplayer(adaptive: bool, page: ft.Control):
                 volume=100,
                 autoplay=True,
                 filter_quality=myplatform,
-                configuration=ftv.VideoConfiguration(),
+                # configuration=ftv.VideoConfiguration(),
                 muted=False,
                 on_loaded=lambda e: loaded(e),
                 on_enter_fullscreen=lambda e: print("Video entered fullscreen!"),
