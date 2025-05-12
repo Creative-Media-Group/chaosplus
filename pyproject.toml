@@ -5,7 +5,7 @@ description = ""
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "Creative Media Group", email = "cmg.buissnes@web.de" }]
-dependencies = ["flet==0.28.1", "mylocale", "flet-localisation", "flet-video"]
+dependencies = ["flet==0.28.2", "mylocale", "flet-localisation", "flet-video"]
 
 [tool.flet]
 # org name in reverse domain name notation, e.g. "com.mycompany".
@@ -32,10 +32,10 @@ dependencies = ["pyjnius"]
 dependencies = ["pyobjus"]
 
 [tool.uv]
-dev-dependencies = ["flet[all]==0.28.1"]
+dev-dependencies = ["flet[all]==0.28.2"]
 
 [tool.poetry]
 package-mode = false
 
 [tool.poetry.group.dev.dependencies]
-flet = { extras = ["all"], version = "0.28.1" }
+flet = { extras = ["all"], version = "0.28.2" }
