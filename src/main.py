@@ -13,8 +13,8 @@ def main(page: ft.Page):
         page.update()
 
     page.on_route_change = route_change
-    # page.go("/")
-    page.go("/videoplayer")
+    page.go("/")
+    # page.go("/videoplayer")
 
 
 ft.app(main)
