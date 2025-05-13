@@ -19,7 +19,7 @@ def home(adaptive: bool, page: ft.Control):
         ),
         # auto_scroll=True,
         padding=0,
-        # scroll=True,
+        scroll=ft.ScrollMode.AUTO,
         controls=[
             ft.SafeArea(
                 ft.Column(
@@ -229,5 +229,4 @@ def home(adaptive: bool, page: ft.Control):
                 )
             )
         ],
-        scroll=ft.ScrollMode.AUTO,
     )
