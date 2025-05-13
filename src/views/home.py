@@ -12,11 +12,14 @@ def home(adaptive: bool, page: ft.Control):
         route="/",
         adaptive=adaptive,
         appbar=ft.AppBar(
+            bgcolor=ft.Colors.TRANSPARENT,
             title=ft.Text("Chaos+"),
             center_title=True,
             leading=ft.Image(src="icon.png", width=40, height=40),
         ),
-        auto_scroll=True,
+        # auto_scroll=True,
+        padding=0,
+        # scroll=True,
         controls=[
             ft.SafeArea(
                 ft.Column(
