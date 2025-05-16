@@ -1,7 +1,7 @@
 [project]
 name = "chaosplus"
 version = "0.1.0"
-description = ""
+description = "An App for media.ccc.de"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "Creative Media Group", email = "cmg.buissnes@web.de" }]

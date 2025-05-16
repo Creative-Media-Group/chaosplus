@@ -32,61 +32,6 @@ def home(adaptive: bool, page: ft.Control):
                                     text=HELLOMSG(page),
                                     on_click=lambda _: new(),
                                 ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
                             ],
                             expand=True,
                             scroll=ft.ScrollMode.AUTO,
@@ -104,56 +49,6 @@ def home(adaptive: bool, page: ft.Control):
                                     text=HELLOMSG(page),
                                     on_click=lambda _: new(),
                                 ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
                             ],
                             expand=True,
                             scroll=ft.ScrollMode.AUTO,
@@ -161,56 +56,6 @@ def home(adaptive: bool, page: ft.Control):
                         ft.Text("Hello", size=40),
                         ft.Row(
                             controls=[
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
-                                    text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
-                                ),
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
                                     text=HELLOMSG(page),
