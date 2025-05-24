@@ -1,4 +1,4 @@
-# Chaos app
+# Chaosplus app
 
 ## Run the app
 
