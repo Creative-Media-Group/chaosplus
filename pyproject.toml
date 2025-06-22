@@ -5,7 +5,12 @@ description = "An App for media.ccc.de"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "Creative Media Group", email = "cmg.buissnes@web.de" }]
-dependencies = ["flet==0.28.3", "mylocale", "flet-localisation", "flet-video"]
+dependencies = [
+    "flet==0.28.3",
+    "mylocale",
+    "flet-localisation",
+    "git+https://github.com/flet-dev/flet-video.git",
+]
 
 [tool.flet]
 # org name in reverse domain name notation, e.g. "com.mycompany".
