@@ -1,18 +1,17 @@
 import os
-from mylocale import tr
+from mylocale import TR
 from flet_localisation import locale
 import flet as ft
 
 
-trfile = f"{os.path.dirname(__file__)}/localisation.csv"
-
-
 def HELLOMSG(page):
+    trfile = f"{os.path.dirname(__file__)}/localisation.csv"
     myplatfom = str(page.platform)
-    langcode = str(locale(platform=myplatfom)).split("_")[0]
-    region = str(locale(platform=myplatfom)).split("_")[1]
-    return tr(
-        csv_file=trfile,
+    mylocale = str(locale(platform=myplatfom)).split("_")
+    langcode = mylocale[0]
+    region = mylocale[1]
+    tr = TR(csv_file=trfile, langcode=langcode)
+    return tr.tr(
         target_key="HELLOWORLD",
         langcode=langcode,
     )
