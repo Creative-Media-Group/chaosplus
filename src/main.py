@@ -1,5 +1,5 @@
 import flet as ft
-from views import home, videoplayer
+from views import home, videoplayer, mediainfo
 
 
 def main(page: ft.Page):
@@ -7,6 +7,8 @@ def main(page: ft.Page):
         page.views.clear()
         if page.route == "/":
             page.views.append(home(adaptive=True, page=page))
+        elif page.route == "/mediainfo":
+            page.views.append(mediainfo(adaptive=True, page=page))
         elif page.route == "/videoplayer":
             page.views.append(videoplayer(adaptive=True, page=page))
 

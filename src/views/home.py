@@ -10,11 +10,7 @@ def new():
 def home(adaptive: bool, page: ft.Control):
     trfile = os.path.join(
         os.path.dirname(__file__), "../localisations/localisation.csv"
-    )  # f"{os.path.dirname(__file__)}/localisation.csv"
-    # Just for testing
-    foldercontent = os.listdir(os.curdir)
-    print(foldercontent)
-    # Just for testing
+    )
     myplatfom = str(page.platform)
     mylocale = str(locale(platform=myplatfom)).split("_")
     langcode = mylocale[0]
