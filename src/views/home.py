@@ -8,7 +8,9 @@ def new():
 
 
 def home(adaptive: bool, page: ft.Control):
-    trfile = "src/localisations/localisation.csv"  # f"{os.path.dirname(__file__)}/localisation.csv"
+    trfile = os.path.join(
+        os.path.dirname(__file__), "../localisations/localisation.csv"
+    )  # f"{os.path.dirname(__file__)}/localisation.csv"
     # Just for testing
     foldercontent = os.listdir(os.curdir)
     print(foldercontent)
