@@ -9,7 +9,7 @@ dependencies = [
     "flet==0.28.3",
     "mylocale",
     "flet-localisation",
-    "git+https://github.com/Creative-Media-Group/flet-video.git",
+    "flet-video @ git+https://github.com/flet-dev/flet-video.git@v0",
 ]
 
 [tool.flet]
