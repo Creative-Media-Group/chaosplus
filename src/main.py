@@ -1,5 +1,6 @@
 import flet as ft
 from views import home, videoplayer, mediainfo
+import asyncio
 
 
 def main(page: ft.Page):
@@ -15,8 +16,7 @@ def main(page: ft.Page):
         page.update()
 
     page.on_route_change = route_change
-    page.go("/")
-    # page.go("/videoplayer")
+    asyncio.create_task(page.push_route("/"))
 
 
-ft.app(main)
+ft.run(main)
