@@ -1,7 +1,7 @@
 import flet as ft
 
 
-def mystack(img_src: str, text: str, adaptive: bool = True):
+def mystack(img_src: str, text: str, adaptive: bool = True, border_radius=10):
     width = 160 * 2
     height = 90 * 2
     return ft.Stack(
@@ -11,7 +11,7 @@ def mystack(img_src: str, text: str, adaptive: bool = True):
                 width=width,
                 height=height,
                 fit=ft.ImageFit.FIT_WIDTH,
-                border_radius=10,
+                border_radius=border_radius,
             ),
             ft.Image(
                 src=img_src.format(),
@@ -38,11 +38,15 @@ def mystack(img_src: str, text: str, adaptive: bool = True):
 
 
 def mybutton(
-    img_src: str, text: str, on_click, disabled: bool = False, adaptive: bool = True
+    img_src: str,
+    text: str,
+    on_click,
+    disabled: bool = False,
+    adaptive: bool = True,
+    border_radius=10,
 ):
     width = 160 * 2
     height = 90 * 2
-    border_radius = 10
     return ft.OutlinedButton(
         content=ft.Stack(
             controls=[
