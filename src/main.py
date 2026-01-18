@@ -14,6 +14,13 @@ def main(page: ft.Page):
 
         page.update()
 
+    def view_pop(e):
+        if e.view is not None:
+            page.views.remove(e.view)
+            top_view = page.views[-1]
+            page.go(top_view.route)
+
+    page.on_view_pop = view_pop
     page.on_route_change = route_change
     page.go("/")
 
