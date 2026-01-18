@@ -1,12 +1,12 @@
 import flet as ft
 from localisations import *
 from components import mystack, mybutton
-
+import asyncio
 
 img = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png"
 
 
-def mediainfo(adaptive: bool, page: ft.Control):
+def mediainfo(adaptive: bool, page: ft.Page):
     trfile = os.path.join(
         os.path.dirname(__file__), "../localisations/localisation.csv"
     )
@@ -21,7 +21,7 @@ def mediainfo(adaptive: bool, page: ft.Control):
         adaptive=adaptive,
         floating_action_button=ft.FloatingActionButton(
             icon=ft.Icons.PLAY_ARROW,
-            on_click=lambda _: page.go("/videoplayer"),
+            on_click=lambda e: asyncio.create_task(page.push_route("/videoplayer")),
         ),
         controls=[ft.SafeArea(ft.Image(img))],
     )

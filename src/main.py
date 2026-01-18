@@ -1,8 +1,9 @@
 import flet as ft
 from views import home, videoplayer, mediainfo, error
+import asyncio
 
 
-def main(page: ft.Page):
+async def main(page: ft.Page):
     def route_change(e):
         page.views.clear()
         if page.route == "/":
@@ -14,15 +15,15 @@ def main(page: ft.Page):
 
         page.update()
 
-    def view_pop(e):
+    async def view_pop(e):
         if e.view is not None:
             page.views.remove(e.view)
             top_view = page.views[-1]
-            page.go(top_view.route)
+            await page.push_route(top_view.route)
 
     page.on_view_pop = view_pop
     page.on_route_change = route_change
-    page.go("/")
+    await page.push_route("/")
 
 
 ft.run(main)

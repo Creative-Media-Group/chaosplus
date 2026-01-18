@@ -3,7 +3,7 @@ from localisations import *
 from components import mystack, mybutton
 
 
-def error(adaptive: bool, page: ft.Control, text: str):
+def error(adaptive: bool, page: ft.Page, text: str):
     trfile = os.path.join(
         os.path.dirname(__file__), "../localisations/localisation.csv"
     )

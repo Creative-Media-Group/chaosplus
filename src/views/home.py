@@ -1,13 +1,14 @@
 import flet as ft
 from localisations import *
 from components import mystack, mybutton
+import asyncio
 
 
 def new():
     pass
 
 
-def home(adaptive: bool, page: ft.Control):
+def home(adaptive: bool, page: ft.Page):
     trfile = os.path.join(
         os.path.dirname(__file__), "../localisations/localisation.csv"
     )
@@ -41,7 +42,9 @@ def home(adaptive: bool, page: ft.Control):
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
                                     text=HELLOMSG(page),
-                                    on_click=lambda _: page.go("/mediainfo"),
+                                    on_click=lambda e: asyncio.create_task(
+                                        page.push_route("/mediainfo")
+                                    ),
                                 ),
                             ],
                             expand=True,
@@ -54,12 +57,12 @@ def home(adaptive: bool, page: ft.Control):
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
                                     text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
+                                    on_click=lambda e: new(),
                                 ),
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
                                     text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
+                                    on_click=lambda e: new(),
                                 ),
                             ],
                             expand=True,
@@ -72,12 +75,12 @@ def home(adaptive: bool, page: ft.Control):
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
                                     text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
+                                    on_click=lambda e: new(),
                                 ),
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
                                     text=HELLOMSG(page),
-                                    on_click=lambda _: new(),
+                                    on_click=lambda e: new(),
                                 ),
                             ],
                             expand=True,
