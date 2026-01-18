@@ -1,5 +1,5 @@
 import flet as ft
-from views import home, videoplayer, mediainfo
+from views import home, videoplayer, mediainfo, error
 
 
 def main(page: ft.Page):
