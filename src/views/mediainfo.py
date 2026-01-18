@@ -18,7 +18,7 @@ def mediainfo(adaptive: bool, page: ft.Page):
     return ft.View(
         scroll=ft.ScrollMode.AUTO,
         route="/mediainfo",
-        adaptive=adaptive,
+        # adaptive=adaptive,
         floating_action_button=ft.FloatingActionButton(
             icon=ft.Icons.PLAY_ARROW,
             on_click=lambda e: asyncio.create_task(page.push_route("/videoplayer")),
