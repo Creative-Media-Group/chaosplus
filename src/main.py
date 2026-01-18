@@ -1,6 +1,5 @@
 import flet as ft
 from views import home, videoplayer, mediainfo
-import asyncio
 
 
 def main(page: ft.Page):

@@ -1,6 +1,5 @@
 import flet as ft
 import flet_video as ftv
-import asyncio
 
 
 def videoplayer(adaptive: bool, page: ft.Control):
@@ -36,9 +35,7 @@ def videoplayer(adaptive: bool, page: ft.Control):
                 on_loaded=lambda e: loaded(e),
                 on_enter_fullscreen=lambda e: print("Video entered fullscreen!"),
                 on_exit_fullscreen=lambda e: print("Video exited fullscreen!"),
-                on_completed=lambda _: asyncio.create_task(
-                    page.push_route("/videoplayer")
-                ),
+                on_completed=lambda _: page.go("/videoplayer"),
             )
         ],
     )
