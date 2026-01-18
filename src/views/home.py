@@ -2,6 +2,7 @@ import flet as ft
 from localisations import *
 from components import mystack, mybutton
 import asyncio
+from flet_localisation import locale
 
 
 def new():
