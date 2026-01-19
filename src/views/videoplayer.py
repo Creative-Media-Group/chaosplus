@@ -12,8 +12,8 @@ def myplatform(page: ft.Page):
 
 async def videoplayer(adaptive: bool, page: ft.Page):
     async def loaded(e):
-        video.play()
-        page.update()
+        await video.play()
+        await page.update()
 
     url = "https://cdn.media.ccc.de/congress/2024/webm-hd/38c3-198-eng-deu-pol-BlinkenCity_Radio-Controlling_Street_Lamps_and_Power_Plants_webm-hd.webm"
     video_obj = [ftv.VideoMedia(url)]
