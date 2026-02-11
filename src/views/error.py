@@ -1,6 +1,7 @@
 import flet as ft
 from localisations import *
 from components import mystack, mybutton
+import os
 
 
 def error(adaptive: bool, page: ft.Page, text: str):
