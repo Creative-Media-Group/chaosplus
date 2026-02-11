@@ -1,7 +1,7 @@
 import flet as ft
 
 
-def mystack(img_src: str, text: str, adaptive: bool = True, border_radius=10):
+def mystack(img_src: str, text: str, adaptive: bool = True, border_radius=5):
     width = 160 * 2
     height = 90 * 2
     return ft.Stack(

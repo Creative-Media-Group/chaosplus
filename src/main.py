@@ -1,5 +1,5 @@
 import flet as ft
-from views import home, videoplayer, mediainfo, error
+from views import home, videoplayer, error
 import asyncio
 
 
@@ -7,8 +7,6 @@ async def main(page: ft.Page):
     async def route_change():
         page.views.clear()
         page.views.append(home(adaptive=True, page=page))
-        if page.route == "/mediainfo":
-            page.views.append(await mediainfo(adaptive=True, page=page))
         if page.route == "/videoplayer":
             page.views.append(await videoplayer(adaptive=True, page=page))
 

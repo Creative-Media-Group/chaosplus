@@ -17,25 +17,39 @@ async def videoplayer(adaptive: bool, page: ft.Page):
     video_obj = [ftv.VideoMedia(url)]
     return ft.View(
         route="/videoplayer",
-        padding=0,
+        # padding=0,
+        appbar=ft.AppBar(title=ft.Text("Videotitle")),
         controls=[
-            video := ftv.Video(
-                expand=True,
-                fullscreen=True,
-                playlist=video_obj,
-                playlist_mode=ftv.PlaylistMode.LOOP,
-                fill_color=ft.Colors.BLACK,
-                aspect_ratio=16 / 9,
-                volume=100,
-                autoplay=True,
-                filter_quality=myplatform(page=page),
-                # configuration=ftv.VideoConfiguration(),
-                muted=False,
-                on_enter_fullscreen=lambda e: print("Video entered fullscreen!"),
-                on_exit_fullscreen=lambda e: print("Video exited fullscreen!"),
-                on_complete=lambda e: asyncio.create_task(
-                    page.push_route("/videoplayer")
-                ),
-            )
+            ft.Column(
+                controls=[
+                    video := ftv.Video(
+                        expand=True,
+                        # fullscreen=True,
+                        playlist=video_obj,
+                        playlist_mode=ftv.PlaylistMode.LOOP,
+                        fill_color=ft.Colors.BLACK,
+                        aspect_ratio=16 / 9,
+                        volume=100,
+                        autoplay=True,
+                        filter_quality=myplatform(page=page),
+                        # configuration=ftv.VideoConfiguration(),
+                        muted=False,
+                        on_enter_fullscreen=lambda e: print(
+                            "Video entered fullscreen!"
+                        ),
+                        on_exit_fullscreen=lambda e: print("Video exited fullscreen!"),
+                        on_complete=lambda e: asyncio.create_task(
+                            page.push_route("/videoplayer")
+                        ),
+                    ),
+                    ft.Column(
+                        controls=[
+                            ft.Text("hello", size=50),
+                            ft.Text("hello", size=30),
+                        ]
+                    ),
+                ],
+            ),
         ],
+        scroll=ft.ScrollMode.AUTO,
     )
