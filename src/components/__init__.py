@@ -7,14 +7,14 @@ def mystack(img_src: str, text: str, adaptive: bool = True, borderradius=5):
     return ft.Stack(
         controls=[
             ft.Image(
-                src=img_src.format(),
+                src=img_src,
                 width=width,
                 height=height,
                 fit=ft.BoxFit.CONTAIN,
                 border_radius=ft.BorderRadius.all(borderradius),
             ),
             ft.Image(
-                src=img_src.format(),
+                src=img_src,
             ),
             ft.Row(
                 controls=[
@@ -51,14 +51,14 @@ def mybutton(
         content=ft.Stack(
             controls=[
                 ft.Image(
-                    src=img_src.format(),
+                    src=img_src,
                     width=width,
                     height=height,
                     fit=ft.BoxFit.FIT_WIDTH,
                     border_radius=ft.BorderRadius.all(borderradius),
                 ),
                 ft.Image(
-                    src=img_src.format(),
+                    src=img_src,
                 ),
                 ft.Row(
                     controls=[
