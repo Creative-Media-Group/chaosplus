@@ -17,7 +17,6 @@ async def videoplayer(adaptive: bool, page: ft.Page):
     video_obj = [ftv.VideoMedia(url)]
     return ft.View(
         route="/videoplayer",
-        # adaptive=adaptive,
         padding=0,
         controls=[
             video := ftv.Video(

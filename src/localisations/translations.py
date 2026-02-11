@@ -4,7 +4,7 @@ from flet_localisation import locale
 import flet as ft
 
 
-def HELLOMSG(page):
+def HELLOMSG(page: ft.Page):
     trfile = f"{os.path.dirname(__file__)}/localisation.csv"
     myplatfom = str(page.platform)
     mylocale = str(locale(platform=myplatfom)).split("_")
