@@ -10,7 +10,7 @@ def mystack(img_src: str, text: str, adaptive: bool = True, border_radius=10):
                 src=img_src.format(),
                 width=width,
                 height=height,
-                fit=ft.ImageFit.WIDTH_FULL,
+                fit=ft.BoxFit.CONTAIN,
                 border_radius=border_radius,
             ),
             ft.Image(
