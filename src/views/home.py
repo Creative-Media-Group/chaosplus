@@ -46,7 +46,7 @@ def home(adaptive: bool, page: ft.Page):
                             # rtl=tr.check_rtl(langcode=langcode),
                             controls=[
                                 mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
+                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
                                     on_click=lambda e: asyncio.create_task(
                                         page.push_route("/videoplayer")
@@ -61,12 +61,12 @@ def home(adaptive: bool, page: ft.Page):
                             # rtl=tr.check_rtl(langcode=langcode),
                             controls=[
                                 mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
+                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
                                     on_click=lambda e: new(),
                                 ),
                                 mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
+                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
                                     on_click=lambda e: new(),
                                 ),
@@ -82,12 +82,12 @@ def home(adaptive: bool, page: ft.Page):
                             # rtl=tr.check_rtl(langcode=langcode),
                             controls=[
                                 mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
+                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
                                     on_click=lambda e: new(),
                                 ),
                                 mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png",
+                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
                                     on_click=lambda e: new(),
                                 ),
