@@ -6,8 +6,8 @@ from flet_localisation import locale
 import os
 
 
-def new():
-    pass
+def new(e: ft.Event):
+    print(e.data)
 
 
 def home(adaptive: bool, page: ft.Page):
@@ -63,12 +63,12 @@ def home(adaptive: bool, page: ft.Page):
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(),
+                                    on_click=lambda e: new(e),
                                 ),
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(),
+                                    on_click=lambda e: new(e),
                                 ),
                             ],
                             expand=True,
@@ -84,12 +84,12 @@ def home(adaptive: bool, page: ft.Page):
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(),
+                                    on_click=lambda e: new(e),
                                 ),
                                 mybutton(
                                     img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
                                     text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(),
+                                    on_click=lambda e: new(e),
                                 ),
                             ],
                             expand=True,
