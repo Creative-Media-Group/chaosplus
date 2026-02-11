@@ -1,7 +1,7 @@
 import flet as ft
 
 
-def mystack(img_src: str, text: str, adaptive: bool = True, border_radius=5):
+def mystack(img_src: str, text: str, adaptive: bool = True, borderradius=5):
     width = 160 * 2
     height = 90 * 2
     return ft.Stack(
@@ -11,7 +11,7 @@ def mystack(img_src: str, text: str, adaptive: bool = True, border_radius=5):
                 width=width,
                 height=height,
                 fit=ft.BoxFit.CONTAIN,
-                border_radius=ft.BorderRadius.all(border_radius),
+                border_radius=ft.BorderRadius.all(borderradius),
             ),
             ft.Image(
                 src=img_src.format(),
@@ -43,7 +43,7 @@ def mybutton(
     on_click,
     disabled: bool = False,
     adaptive: bool = True,
-    border_radius=10,
+    borderradius=10,
 ):
     width = 160 * 2
     height = 90 * 2
@@ -55,7 +55,7 @@ def mybutton(
                     width=width,
                     height=height,
                     fit=ft.BoxFit.FIT_WIDTH,
-                    border_radius=ft.BorderRadius.all(border_radius),
+                    border_radius=ft.BorderRadius.all(borderradius),
                 ),
                 ft.Image(
                     src=img_src.format(),
@@ -83,5 +83,5 @@ def mybutton(
         on_click=on_click,
         width=width + 5,
         height=height + 15,
-        style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=border_radius)),
+        style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=borderradius)),
     )
