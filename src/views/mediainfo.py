@@ -2,6 +2,7 @@ import flet as ft
 from localisations import *
 from components import mystack, mybutton
 import asyncio
+import os
 
 img = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/2244px-Wikipedia-logo-v2.svg.png"
 
