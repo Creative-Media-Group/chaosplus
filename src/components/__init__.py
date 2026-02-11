@@ -11,7 +11,7 @@ def mystack(img_src: str, text: str, adaptive: bool = True, border_radius=5):
                 width=width,
                 height=height,
                 fit=ft.BoxFit.CONTAIN,
-                border_radius=border_radius,
+                border_radius=ft.BorderRadius.all(border_radius),
             ),
             ft.Image(
                 src=img_src.format(),
@@ -55,7 +55,7 @@ def mybutton(
                     width=width,
                     height=height,
                     fit=ft.BoxFit.FIT_WIDTH,
-                    border_radius=border_radius,
+                    border_radius=ft.BorderRadius.all(border_radius),
                 ),
                 ft.Image(
                     src=img_src.format(),

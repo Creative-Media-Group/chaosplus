@@ -31,7 +31,7 @@ def home(adaptive: bool, page: ft.Page):
             # rtl=tr.check_rtl(langcode=langcode),
         ),
         auto_scroll=True,
-        padding=0,
+        # padding=0,
         scroll=ft.ScrollMode.AUTO,
         controls=[
             ft.SafeArea(
