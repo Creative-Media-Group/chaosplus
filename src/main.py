@@ -1,5 +1,5 @@
 import flet as ft
-from views import home, videoplayer, error
+from views import home, videoplayer
 import asyncio
 
 
@@ -14,7 +14,7 @@ async def main(page: ft.Page):
 
     async def view_pop(e: ft.ViewPopEvent):
         if e.view is not None:
-            print("View pop:", e.view)
+            print("View pop:", e.route)
             page.views.remove(e.view)
             top_view = page.views[-1]
             await page.push_route(str(top_view.route))

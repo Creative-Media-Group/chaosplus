@@ -1,4 +1,5 @@
 import flet as ft
+from flet.components.hooks.use_callback import P
 from localisations import *
 from components import mystack, mybutton
 import asyncio
@@ -8,6 +9,29 @@ import os
 
 def new(e: ft.Event):
     print(e.data)
+
+
+def homeelement(page: ft.Page) -> list:
+    return [
+        ft.Text(
+            "Hello",
+            size=40,  # rtl=tr.check_rtl(langcode=langcode)
+        ),
+        ft.Row(
+            # rtl=tr.check_rtl(langcode=langcode),
+            controls=[
+                mybutton(
+                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
+                    text="Title",  # HELLOMSG(page),
+                    on_click=lambda e: asyncio.create_task(
+                        page.push_route("/videoplayer")
+                    ),
+                ),
+            ],
+            expand=True,
+            scroll=ft.ScrollMode.AUTO,
+        ),
+    ]
 
 
 def home(adaptive: bool, page: ft.Page):
@@ -35,67 +59,9 @@ def home(adaptive: bool, page: ft.Page):
         scroll=ft.ScrollMode.AUTO,
         controls=[
             ft.SafeArea(
-                ft.Column(
+                ft.Column(  ###
                     # rtl=tr.check_rtl(langcode=langcode),
-                    controls=[
-                        ft.Text(
-                            "Hello",
-                            size=40,  # rtl=tr.check_rtl(langcode=langcode)
-                        ),
-                        ft.Row(
-                            # rtl=tr.check_rtl(langcode=langcode),
-                            controls=[
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
-                                    text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: asyncio.create_task(
-                                        page.push_route("/videoplayer")
-                                    ),
-                                ),
-                            ],
-                            expand=True,
-                            scroll=ft.ScrollMode.AUTO,
-                        ),
-                        ft.Text("Hello", size=40),
-                        ft.Row(
-                            # rtl=tr.check_rtl(langcode=langcode),
-                            controls=[
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
-                                    text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(e),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
-                                    text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(e),
-                                ),
-                            ],
-                            expand=True,
-                            scroll=ft.ScrollMode.AUTO,
-                        ),
-                        ft.Text(
-                            "Hello",
-                            size=40,  # rtl=tr.check_rtl(langcode=langcode)
-                        ),
-                        ft.Row(
-                            # rtl=tr.check_rtl(langcode=langcode),
-                            controls=[
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
-                                    text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(e),
-                                ),
-                                mybutton(
-                                    img_src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/3840px-Wikipedia-logo-v2.svg.png",
-                                    text="Title",  # HELLOMSG(page),
-                                    on_click=lambda e: new(e),
-                                ),
-                            ],
-                            expand=True,
-                            scroll=ft.ScrollMode.AUTO,
-                        ),
-                    ],
+                    controls=homeelement(page=page)
                 )
             )
         ],
