@@ -4,6 +4,8 @@ import asyncio
 
 
 async def main(page: ft.Page):
+    page.fonts = {"VCROCDFaux": "VCROCDFaux.ttf"}
+
     async def route_change():
         page.views.clear()
         page.views.append(home(adaptive=True, page=page))
