@@ -5,10 +5,9 @@ description = "An App for media.ccc.de"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Flet developer", email = "you@example.com" }]
-dependencies = ["flet>=0.80.5", "mylocale", "flet-localisation", "flet-video"]
+dependencies = ["flet>=0.82.2", "mylocale", "flet-localisation", "flet-video"]
 
 [dependency-groups]
-dev = ["flet-cli>=0.80.5", "flet-desktop>=0.80.5", "flet-web>=0.80.5"]
 
 [tool.flet]
 org = "de.cmg"
