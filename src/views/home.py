@@ -5,6 +5,7 @@ from components import mystack, mybutton
 import asyncio
 from flet_localisation import locale
 import os
+from myccc.media import MediaCCCApi
 
 
 def new(e: ft.Event):
@@ -12,6 +13,7 @@ def new(e: ft.Event):
 
 
 def homeelement(page: ft.Page) -> list:
+    api = MediaCCCApi()
     return [
         ft.Text(
             "Hello",
