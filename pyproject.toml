@@ -1,32 +1,36 @@
 [project]
 name = "chaosplus"
 version = "0.1.0"
-description = "An App for media.ccc.de"
+description = ""
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{ name = "Flet developer", email = "you@example.com" }]
+authors = [
+    { name = "Flet developer", email = "you@example.com" }
+]
 dependencies = [
-    "flet>=0.82.2",
-    "mylocale",
-    "flet-localisation",
-    "flet-video",
-    "myccc",
+    "flet>=0.86.0"
 ]
 
 [dependency-groups]
-dev = ["flet-cli>=0.82.2", "flet-desktop-light>=0.82.2", "flet-web>=0.82.2"]
+dev = [
+    "flet-cli>=0.86.0",
+    "flet-desktop>=0.86.0",
+    "flet-web>=0.86.0",
+    # Integration testing with `flet test` / pytest. The `test` extra brings in
+    # pytest, pytest-asyncio and the screenshot-comparison dependencies.
+    "flet[test]>=0.86.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
 
 [tool.flet]
-org = "de.cmg"
-product = "Chaos+"
-company = "Creative Media Group"
-copyright = "Copyright (C) 2023-2026 by Creative Media Group"
+desktop_flavor = "light"    # Change to "full" to use flet-audio and flet-video
+org = "com.mycompany"
+product = "chaosplus"
+company = "Flet"
+copyright = "Copyright (C) 2023-2026 by Flet"
 
 [tool.flet.app]
 path = "src"
-
-[tool.flet.android]
-dependencies = ["pyjnius"]
-
-[tool.flet.ios]
-dependencies = ["pyobjus"]
