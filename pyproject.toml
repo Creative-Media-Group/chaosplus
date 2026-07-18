@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Flet developer", email = "you@example.com" }]
 dependencies = [
-    "flet>=0.86.0",
+    "flet>=0.86.1",
     "mylocale",
     "flet-localisation",
     "flet-video",
@@ -15,12 +15,12 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "flet-cli>=0.86.0",
-    "flet-desktop>=0.86.0",
-    "flet-web>=0.86.0",
+    "flet-cli>=0.86.1",
+    "flet-desktop>=0.86.1",
+    "flet-web>=0.86.1",
     # Integration testing with `flet test` / pytest. The `test` extra brings in
     # pytest, pytest-asyncio and the screenshot-comparison dependencies.
-    "flet[test]>=0.86.0",
+    "flet[test]>=0.86.1",
 ]
 
 [tool.pytest.ini_options]
@@ -29,6 +29,7 @@ testpaths = ["tests"]
 
 [tool.flet]
 desktop_flavor = "full"                                       # Change to "full" to use flet-audio and flet-video
+org = "de.cmg"
 product = "Chaos+"
 company = "Creative Media Group"
 copyright = "Copyright (C) 2023-2026 by Creative Media Group"
