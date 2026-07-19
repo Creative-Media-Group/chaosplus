@@ -37,6 +37,7 @@ async def videoplayer(adaptive: bool, page: ft.Page):
                         on_enter_fullscreen=lambda e: print(
                             "Video entered fullscreen!"
                         ),
+                        configuration=ftv.VideoConfiguration(),
                         on_exit_fullscreen=lambda e: print("Video exited fullscreen!"),
                         on_complete=lambda e: asyncio.create_task(
                             page.push_route("/videoplayer")
